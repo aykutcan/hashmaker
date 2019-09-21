@@ -1,0 +1,30 @@
+{
+    "name": "aykut/hash-maker",
+    "description": "FVN Hash implementation in Pure php",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Aykut CAN",
+            "email": "aykutcn@yandex.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [],
+        "psr-0": {
+            "HashMaker": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HashMaker\\HashMakerServiceProvider"
+            ],
+            "aliases": {
+                "ModuleLoader": "Nette\\Admin\\Facades\\ModuleLoader",
+                "FilterGenerator": "Nette\\Admin\\Facades\\FilterGenerator"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
